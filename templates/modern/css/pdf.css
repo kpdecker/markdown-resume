@@ -1,5 +1,6 @@
 body.pdf {
     color: black;
+    background: transparent;
 
     a {
         text-decoration: none;
@@ -11,7 +12,7 @@ body.pdf {
         padding: 0;
         background: none;
         border: none;
-        border-width: 8px 0 2px 0;
+        box-shadow: none;
         text-align: left;
     }
 
@@ -53,10 +54,6 @@ body.pdf {
         position: absolute;
     }
 
-    ul li {
-        width: 33%;
-        float: left;
-    }
     ul dl {
         margin: 0;
         padding: 0.3em 0 0;
@@ -76,14 +73,14 @@ body.pdf {
         margin: .7em 0 0;
     }
 
-    ol li {
+    ol > li {
         width: 33%;
         margin: 0;
     }
-    ol li:nth-child(3n) {
+    ol > li:nth-child(3n) {
         width: 34%;
     }
-    ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
+    ol > li:nth-child(1), ol > li:nth-child(2), ol > li:nth-child(3) {
         border-top: none;
     }
 

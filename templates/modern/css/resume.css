@@ -12,6 +12,7 @@
 body {
     font-family: 'Hoefler Text', Times New Roman, Times, serif;
     color: #444;
+    background: #666;
 }
 h1, h2, h3, h4, ul dl dt {
     font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
@@ -21,8 +22,8 @@ h1, h2, h3, h4, ul dl dt {
     margin: 0 auto;
     padding: 0;
     background: whiteSmoke;
-    border: solid #666;
-    border-width: 8px 0 2px 0;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px 0px #555;
     text-align: left;
 }
 
@@ -32,7 +33,8 @@ h1, h2, h3, h4, ul dl dt {
 }
 
 a {
-    color: #990003;
+    color: #0366d6;
+    text-decoration: none;
 }
 
 a[href$='.pdf'] {
@@ -101,8 +103,6 @@ h3+p {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-    display: table;
 }
 ul li {
     margin: 0;
@@ -131,7 +131,7 @@ ol {
     display: inline-block;
 }
 
-ol li {
+ol > li {
     margin: 0 0 0 1em;
     padding: 0;
     border-top: 1px solid #CCCCCC;
@@ -141,7 +141,7 @@ ol li {
     line-height: 24px;
     font-size: 14px;
 }
-ol li:nth-child(1) {
+ol > li:nth-child(1) {
     border-top: none;
 }
 
@@ -156,9 +156,9 @@ dl {
         font-size: 140%;
     }
     dd {
-        margin: 0 0 1.5em;
+        margin: 0 0 2em;
         padding: 0;
-        font-size: 80%;
+        font-size: 90%;
         line-height: 1.4em;
     }
     strong {
