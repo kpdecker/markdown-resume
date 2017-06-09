@@ -13,6 +13,7 @@ body {
     font-family: 'Hoefler Text', Times New Roman, Times, serif;
     color: #444;
     background: #666;
+    font-size: 16px;
 }
 h1, h2, h3, h4, ul dl dt {
     font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
@@ -154,15 +155,18 @@ dl {
         margin: 0;
         padding: 0;
         font-size: 140%;
+        page-break-after: avoid;
     }
     dd {
         margin: 0 0 2em;
         padding: 0;
         font-size: 90%;
         line-height: 1.4em;
+        page-break-before: avoid;
     }
     strong {
         display: block;
+        white-space: nowrap;
     }
     em {
         display: block;

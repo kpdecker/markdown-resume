@@ -14,6 +14,7 @@ body.pdf {
         border: none;
         box-shadow: none;
         text-align: left;
+        page-break-before: always;
     }
 
     .resume {
@@ -86,7 +87,6 @@ body.pdf {
 
     dl {
         margin: .7em 0 0;
-        page-break-inside: avoid !important;
         display: block;
         width:79%;
         float: left;

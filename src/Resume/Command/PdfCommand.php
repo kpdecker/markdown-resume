@@ -83,7 +83,7 @@ class PdfCommand extends HtmlCommand
         file_put_contents($pdfSource, $rendered);
 
         // Process the document with wkhtmltopdf
-        exec('wkhtmltopdf -s Letter -d 216 ' . $pdfSource .' ' . $destFilename);
+        exec('wkhtmltopdf -s Letter -d 432 --margin-top 15mm --margin-bottom 15mm ' . $pdfSource .' ' . $destFilename);
 
         // Unlink the temporary file
         unlink($pdfSource);
