@@ -104,10 +104,14 @@ h3+p {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap
 }
 ul li {
     margin: 0;
     padding: 0;
+    flex-basis: 33%;
 }
 
 ul dl {
