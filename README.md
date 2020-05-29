@@ -55,9 +55,8 @@ inside the cloned directory
 ```
 
 ## Help
-
 ```
-Markdown Resume Generator version 2.3.0 by Craig Davis
+Markdown Resume Generator version 2.3.2 by Craig Davis
 
 Usage:
   [options] command [arguments]
@@ -81,7 +80,6 @@ Available commands:
   version     Show current version information
 
 ```
-
 ## Examples
 
 Choose a template with the -t option.

@@ -108,13 +108,14 @@ class PdfCommand extends HtmlCommand
         $cmd = "wkhtmltopdf $pdfargs $pdfSource $destFilename";
 
         // Process the document with wkhtmltopdf
-        if(!$htmlonly)
+        if (!$htmlonly) {
             exec($cmd);
+        }
 
         // Unlink the temporary file
-        if(!($htmlonly || $keephtml))
+        if (!($htmlonly || $keephtml)) {
             unlink($pdfSource);
-        else
+        } else {
             $output->writeln(
                 sprintf(
                     "Keeping interim HTML: <info>%s</info>",
@@ -122,6 +123,7 @@ class PdfCommand extends HtmlCommand
                 ),
                 $this->app->outputFormat
             );
+        }
 
         $output->writeln(
             sprintf(
